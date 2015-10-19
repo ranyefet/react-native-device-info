@@ -36,6 +36,7 @@ RCT_EXPORT_MODULE()
         @"appIdentifier": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleIdentifier"],
         @"appName": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"],
         @"appVersion": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"],
+        @"timeZone": [NSTimeZone systemTimeZone].name,
         @"installationId": installationId,
         @"model": currentDevice.model,
         @"systemName": currentDevice.systemName,

@@ -12,5 +12,6 @@ module.exports = {
   installationId: RNDeviceInfo.installationId,
   model: RNDeviceInfo.model,
   systemName: RNDeviceInfo.systemName,
-  systemVersion: RNDeviceInfo.systemVersion
+  systemVersion: RNDeviceInfo.systemVersion,
+  timeZone: RNDeviceInfo.timeZone
 };
