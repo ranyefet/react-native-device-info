@@ -21,18 +21,18 @@
     NSLocale *currentLocale = [NSLocale currentLocale];
     NSString *language = [currentLocale objectForKey:NSLocaleLanguageCode];
     NSString *countryCode = [currentLocale objectForKey:NSLocaleCountryCode];
-    
+
     if (language.length == 0) {
         return [[NSString alloc] init];
     }
-    
+
     NSString *localeIdentifier = nil;
     if (countryCode.length > 0) {
         localeIdentifier = [NSString stringWithFormat:@"%@-%@", language, countryCode];
     } else {
         localeIdentifier = language;
     }
-    
+
     return localeIdentifier;
 }
 
