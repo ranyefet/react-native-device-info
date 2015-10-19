@@ -32,9 +32,10 @@ RCT_EXPORT_MODULE()
     NSString *installationId = [identifierForVendor UUIDString];
 
     return @{
+        @"appBuildNumber": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"],
         @"appIdentifier": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleIdentifier"],
         @"appName": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"],
-        @"appVersion": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"],
+        @"appVersion": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"],
         @"installationId": installationId,
         @"model": currentDevice.model,
         @"systemName": currentDevice.systemName,
