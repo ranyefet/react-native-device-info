@@ -20,8 +20,5 @@
   "license": "MIT",
   "dependencies": {
     "eventemitter3": "^1.1.0"
-  },
-  "peerDependencies": {
-    "react-native": ">=0.5"
   }
 }
