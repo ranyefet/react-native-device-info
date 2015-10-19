@@ -8,7 +8,7 @@ module.exports = {
   appIdentifier: RNDeviceInfo.appIdentifier,
   appName: RNDeviceInfo.appName,
   appVersion: RNDeviceInfo.appVersion
-  deviceId: RNDeviceInfo.deviceId,
+  installationId: RNDeviceInfo.installationId,
   model: RNDeviceInfo.model,
   systemName: RNDeviceInfo.systemName,
   systemVersion: RNDeviceInfo.systemVersion

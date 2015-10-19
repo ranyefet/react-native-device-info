@@ -29,13 +29,13 @@ RCT_EXPORT_MODULE()
     UIDevice *currentDevice = [UIDevice currentDevice];
 
     NSUUID *identifierForVendor = [currentDevice identifierForVendor];
-    NSString *deviceId = [identifierForVendor UUIDString];
+    NSString *installationId = [identifierForVendor UUIDString];
 
     return @{
         @"appIdentifier": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleIdentifier"],
         @"appName": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"],
         @"appVersion": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"],
-        @"deviceId": deviceId,
+        @"installationId": installationId,
         @"model": currentDevice.model,
         @"systemName": currentDevice.systemName,
         @"systemVersion": currentDevice.systemVersion
