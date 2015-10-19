@@ -32,15 +32,14 @@ RCT_EXPORT_MODULE()
     NSString *deviceId = [identifierForVendor UUIDString];
 
     return @{
-             @"systemName": currentDevice.systemName,
-             @"systemVersion": currentDevice.systemVersion,
-             @"model": currentDevice.model,
-             @"deviceId": deviceId,
-             @"bundleId": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleIdentifier"],
-             @"appVersion": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"],
-             @"buildNumber": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"],
-             @"systemManufacturer": @"Apple",
-             };
+        @"appIdentifier": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleIdentifier"],
+        @"appName": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"],
+        @"appVersion": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"],
+        @"deviceId": deviceId,
+        @"model": currentDevice.model,
+        @"systemName": currentDevice.systemName,
+        @"systemVersion": currentDevice.systemVersion
+    };
 }
 
 @end
