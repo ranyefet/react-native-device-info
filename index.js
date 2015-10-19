@@ -9,6 +9,7 @@ module.exports = {
   appIdentifier: RNDeviceInfo.appIdentifier,
   appName: RNDeviceInfo.appName,
   appVersion: RNDeviceInfo.appVersion,
+  localeIdentifier: RNDeviceInfo.localeIdentifier,
   installationId: RNDeviceInfo.installationId,
   model: RNDeviceInfo.model,
   systemName: RNDeviceInfo.systemName,
